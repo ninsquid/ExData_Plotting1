@@ -23,7 +23,7 @@ y <- PwrCon$Global_active_power
 
 ## Open Graphic Device and Make Plot
 png(file="plot2.png", width = 480, height = 480)
-par(mar=c(4,4,2,2))
+par(mar=c(4,4,4,2))
 plot(x, y, type = "l", lty = 1, xlab = "", ylab = "Global Active Power (kilowatts)")
 
 ## Check and Close Graphic Device

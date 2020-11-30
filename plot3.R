@@ -25,13 +25,13 @@ c <- PwrCon$Sub_metering_3
 
 ## Open Graphic Device and Make Plot
 png(file="plot3.png", width = 480, height = 480)
-par(mar=c(4,4,2,2))
+par(mar=c(4,4,4,2))
 
 plot(x, a, type = "l", xlab = "", ylab = "Energy sub metering")
 lines(x, b, type = "l", col = "red")
 lines(x, c, type = "l", col = "blue")
 
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lwd = 2)
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lwd = 1)
 
 ## Check and Close Graphic Device
 dev.cur()
